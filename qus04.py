@@ -13,7 +13,7 @@ def is_valid_bangladesh_mobile_number(number):
 import re
 
 def is_valid_usa_telephone_number(number):
-    pattern = r"^(?:\+1|1)?[2-9][0-9]{2}[2-9][0-9]{6}$"
+    pattern = r"^(?:\+1|1)?[-. (]*[2-9]\d{2}[-). ]*\d{3}[-. ]*\d{4}$"
     return re.match(pattern, number) is not None
 
 import re
